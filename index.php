@@ -2,7 +2,7 @@
 
 $uri = $_SERVER['REQUEST_URI'];
 
-$root = "/";
+$root = "";
 
 switch ($uri) {
     case $root . "/":
