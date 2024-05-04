@@ -35,17 +35,23 @@ $uri = $_SERVER['REQUEST_URI'];
 $root = $_ENV["ROOT"] ?? "";
 
  
+function addRoute($route, $data){
+echo $route . $data;
+}
+
 // echo $root ;
 // die() ;
 
-switch ($uri) {
-  
+switch ($uri) {  
     case $root . "/":
         require "views/home/index.php";
         break;
     case $root . "/about":
         require "views/about/index.php";
         break;
+   case $root . "/posts/:id": 
+       addRoute("/example", "YurController.php") ;
+        break;   
      default:
      echo $root . $uri;
          require "error.php"   ;
