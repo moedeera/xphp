@@ -1,5 +1,10 @@
 <?php 
 
+
+// helper functions
+require './helpers.php';
+
+// Server Initiation //
 $_ENV = parseEnv();
 
 function path($relativePath): string

@@ -1,5 +1,9 @@
 <?php
+
+require basePath('./views/partials/navbar.php')
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
