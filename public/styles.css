@@ -1,0 +1,10 @@
+.container {
+  background: wheat;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
