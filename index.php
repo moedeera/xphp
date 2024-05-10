@@ -51,13 +51,17 @@ switch ($uri) {
     case $root . "/home":
         require "views/home/index.php";
         break;
-    case $root . "":
-        require "views/home/index.php";
+    case $root . "/login":
+        require "views/login/index.php";
+        break;
+    case $root . "/posts":
+        require "views/posts/index.php";
         break;
     case $root . "/":
         require "views/home/index.php";
         break;
     case $root . "/about":
+        echo $root . $uri;  
         require "views/about/index.php";
         break;
    case $root . "/posts/:id": 

@@ -1,6 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  background-color: aliceblue;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
 .container {
-  background: wheat;
-  border: 1px solid grey;
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
@@ -11,4 +19,58 @@
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
+}
+
+.btn {
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: white;
+  transition: all 0.35s ease-in-out;
+}
+
+.mini-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+
+.mini-container-unit {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 200px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .mini-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .btn:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+  }
+  .mini-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .mini-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
