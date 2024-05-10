@@ -1,10 +1,10 @@
 <?php
 
-include basePath('./views/partials/navbar.php')
+basePath('./views/partials/navbar.php')
 ?>
 <?php
 
-require basePath('./views/partials/head.php')
+ basePath('./views/partials/head.php')
 ?>
 
 
