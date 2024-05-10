@@ -5,5 +5,5 @@ function ReTurnHello(){
 }
 
 function basePath($path){
-    require  $path;
+    include  $path;
 }
