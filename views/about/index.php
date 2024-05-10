@@ -1,9 +1,7 @@
 <?php 
-echo "point 1";
-include basePath('./views/partials/navbar.php'); ?> 
+echo basePath('./views/partials/navbar.php'); ?> 
 <?php
-echo "point 2";
-include basePath('./views/partials/head.php'); ?>
+echo basePath('./views/partials/head.php'); ?>
 
 
 <div class="container">
