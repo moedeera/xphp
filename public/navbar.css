@@ -1,0 +1,15 @@
+/*Navbar*/
+.navbar {
+  border: 1px solid red;
+  display: flex;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a,
+.navbar :visited {
+  text-decoration: none;
+  color: black;
+}

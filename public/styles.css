@@ -1,5 +1,9 @@
 .container {
   background: wheat;
+  border: 1px solid grey;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 .header {
   display: flex;

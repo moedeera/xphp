@@ -1,7 +1,22 @@
-<link rel="stylesheet" href="/public/styles.css">
+<link rel="stylesheet" href="./public/styles.css">
 
-<header class="container">
-      <div class="header" >
+
+<style>
+
+
+.navbar{
+  border: 1px solid red;
+  display: flex;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+</style>
+
+
+<header">
+      <div class="navbar" >
         <h1>
           <a href="/">Workopia</a>
         </h1>
