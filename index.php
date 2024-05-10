@@ -48,6 +48,12 @@ echo $route . $data;
 // die() ;
 
 switch ($uri) {  
+    case $root . "/home":
+        require "views/home/index.php";
+        break;
+    case $root . "":
+        require "views/home/index.php";
+        break;
     case $root . "/":
         require "views/home/index.php";
         break;
