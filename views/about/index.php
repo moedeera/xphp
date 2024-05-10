@@ -1,11 +1,5 @@
-<?php
-
-include basePath('./views/partials/navbar.php')
-?>
-<?php
-
-require basePath('./views/partials/head.php')
-?>
+<?php include basePath('./views/partials/navbar.php'); ?> 
+<?php require basePath('./views/partials/head.php'); ?>
 
 
 <div class="container">

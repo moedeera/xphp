@@ -61,7 +61,6 @@ switch ($uri) {
         require "views/home/index.php";
         break;
     case $root . "/about":
-        echo $root . $uri;  
         require "views/about/index.php";
         break;
    case $root . "/posts/:id": 
