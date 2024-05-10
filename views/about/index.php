@@ -1,7 +1,7 @@
 <?php 
-echo basePath('./views/partials/navbar.php'); ?> 
+basePath('./views/partials/navbar.php'); ?> 
 <?php
-echo basePath('./views/partials/head.php'); ?>
+ basePath('./views/partials/head.php'); ?>
 
 
 <div class="container">

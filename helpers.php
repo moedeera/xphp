@@ -5,5 +5,5 @@ function ReTurnHello(){
 }
 
 function basePath($path){
-        return  __DIR__ .$path;
+    require  $path;
 }
