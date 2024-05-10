@@ -9,7 +9,7 @@
 
 <?php 
 
-$data = [
+$data1 = [
   ['name' => "John Smith", 'age' => 20, 'graduated' => false],
   ['name' => "Samantha Jones", 'age' => 22, 'graduated' => true],
   ['name' => "Cindy Walker", 'age' => 25, 'graduated' => false],
@@ -25,6 +25,11 @@ $data2 = [
 
 $variable1= "Student data";
 
+$dataset = $_GET['dataset'] ?? 'data1';
+$response = ($dataset === 'data2') ? $data2 : $data1;
+
+header('Content-Type: application/json');
+echo json_encode($response);
 
 ?>
 
@@ -35,7 +40,7 @@ $variable1= "Student data";
   <a href="./about">About page</a>
 
 <div class="mini-container">
-<?php foreach ($data as $student):?>
+<?php foreach ($data1 as $student):?>
   <div class="mini-container-unit">
   <h3> <?php echo $student['name'];  ?></h3>
   <p> Age: <?php echo $student['age'];  ?></p>
