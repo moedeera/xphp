@@ -1,5 +1,9 @@
-<?php include basePath('./views/partials/navbar.php'); ?> 
-<?php require basePath('./views/partials/head.php'); ?>
+<?php 
+echo "point 1";
+include basePath('./views/partials/navbar.php'); ?> 
+<?php
+echo "point 2";
+include basePath('./views/partials/head.php'); ?>
 
 
 <div class="container">
