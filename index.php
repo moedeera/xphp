@@ -48,7 +48,7 @@ echo $route . $data;
 // die() ;
 
 switch ($uri) {  
-    case $root . "/home":
+    case $root . "/home":    
         require "views/home/index.php";
         break;
     case $root . "/login":
@@ -67,7 +67,7 @@ switch ($uri) {
        addRoute("/example", "YurController.php") ;
         break;   
      default:
-     echo $root . $uri;
+     echo $uri;
          require "error.php"   ;
          break;
 

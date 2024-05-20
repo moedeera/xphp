@@ -1,12 +1,9 @@
 <?php
-
  basePath('./views/partials/navbar.php')
 ?>
 <?php
-
  basePath('./views/partials/head.php')
 ?>
-
 <?php 
 
 $data1 = [
@@ -24,12 +21,15 @@ $data2 = [
 ];
 
 $variable1= "Student data";
-
+$format = $_GET['format'] ?? 'html'; // Check for a 'format' parameter in URL
 $dataset = $_GET['dataset'] ?? 'data1';
 $response = ($dataset === 'data2') ? $data2 : $data1;
 
-header('Content-Type: application/json');
-echo json_encode($response);
+if ($format === 'json') {
+  header('Content-Type: application/json');
+  echo json_encode($response);
+  exit; // Stop script execution after JSON output
+}
 
 ?>
 
