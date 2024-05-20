@@ -1,0 +1,22 @@
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  color: white;
+}
+.landing-text {
+}
+.landing-picture {
+  height: 600px;
+  min-width: 500px;
+  background-image: url("./pic1.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 992px) {
+  .landing-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

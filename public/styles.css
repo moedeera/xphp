@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  background-color: aliceblue;
+  background-color: #800414;
 
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
@@ -25,7 +25,7 @@
   border: 1px solid rgba(128, 128, 128, 0.25);
   border-radius: 5px;
   padding: 10px 15px;
-  background-color: white;
+  background-color: goldenrod;
   transition: all 0.35s ease-in-out;
 }
 
