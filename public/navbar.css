@@ -1,21 +1,31 @@
 /*Navbar*/
+header {
+  background-color: black;
+}
+
 .navbar {
   display: flex;
   width: 100%;
-  max-width: 1500px;
+
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
+  max-width: 1300px;
 }
 .navbar a,
 .navbar :visited {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
-nav {
+nav,
+nav a,
+.nav a:visited {
   display: flex;
   gap: 15px;
+  justify-content: center;
+  color: black;
 }
 .navbar-menu {
   display: flex;

@@ -7,23 +7,23 @@
 
 
 
-<header">
+<header>
       <div class="navbar" >
         <div class="navbar-menu"><h1>
-          <a href="./">Goodwork</a>
+          <a href="./">Silvian's Taco</a>
         </h1>
         <nav >
-          <a href="login.html" >Services</a>
-          <a href="./posts">Events</a>     
-          <a href="login.html" >Products</a>
-          <a href="register.html">Blog</a>   
+          <a href="/" >Menu</a>
+          <a href="./">Deals</a>     
+          <a href="/" >Order</a>
+          <a href="register.html">About</a>   
         </nav>
       </div>
 
 
         <nav >
-          <a class="btn" href="./login" >Login</a>
-          <a class="btn" href="register.html">Register</a>     
+          <a class="btn" href="./login" >Order</a>
+          
         </nav>
       </div>
     </header>

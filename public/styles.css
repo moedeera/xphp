@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;
   background-color: #800414;
-
+  margin: 0;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
 }
@@ -21,12 +21,16 @@
   margin: 0 auto;
 }
 
-.btn {
+.btn,
+.btn a,
+.btn a:visited {
   border: 1px solid rgba(128, 128, 128, 0.25);
   border-radius: 5px;
   padding: 10px 15px;
   background-color: goldenrod;
   transition: all 0.35s ease-in-out;
+  color: black;
+  max-width: max-content;
 }
 
 .mini-container {

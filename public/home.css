@@ -1,15 +1,26 @@
 .landing-container {
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  min-height: 80vh;
   color: white;
+  padding: 10vh 0;
 }
 .landing-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.landing-text h1,
+.landing-text p {
+  margin-bottom: 10px;
+  line-height: 1.5em;
 }
 .landing-picture {
-  height: 600px;
-  min-width: 500px;
-  background-image: url("./pic1.webp");
+  height: 375px;
+  min-width: 100px;
+  background-image: url("./taco.png");
   background-position: center;
   background-size: cover;
 }
@@ -18,5 +29,8 @@
   .landing-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .landing-text {
+    justify-content: flex-start;
   }
 }
