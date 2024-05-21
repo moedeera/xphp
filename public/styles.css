@@ -2,12 +2,14 @@
 
 * {
   box-sizing: border-box;
-  background-color: #800414;
+
   margin: 0;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
 }
-
+body {
+  background-color: #800414;
+}
 .container {
   width: 100%;
   max-width: 1500px;

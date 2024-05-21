@@ -42,9 +42,7 @@ if ($format === 'json') {
 <div class="landing-container">
   <div class="landing-text">
     <small>Delicious food collection</small>
-    <?php foreach($data1 as $dat): ?>
-    <?php echo "hello"; ?>
-<?php endforeach; ?>
+
 
     <h1>Indulge Your Tastebuds </h1>
     <p>The restaurant is an organic space reflective of our Head Chef's nature inspired cuisine. The interplay of textures and colour brings life and a vibrance that embraces the restaurant’s place. An ode to the Asian landscape, from the vast ocean floor, to the cracked bark of a paperbark tree, every detail from the ground up has been thoughtfully considered.</p>
