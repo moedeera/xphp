@@ -67,7 +67,7 @@ switch ($uri) {
        addRoute("/example", "YurController.php") ;
         break;   
      default:
-     echo $uri;
+    //  echo "uri is $uri, root is $root case is $root/error" ;
          require "error.php"   ;
          break;
 
