@@ -1,6 +1,7 @@
 <?php 
 
-
+// connect database
+include "./database.php";
 // helper functions
 require './helpers.php';
 

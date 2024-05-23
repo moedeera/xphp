@@ -7,6 +7,13 @@
 ?>
 <?php 
 
+
+$stmt = $pdo->prepare('SELECT * FROM employee');
+$stmt-> execute();
+//fetch results
+$results = $stmt->fetchAll();
+
+
 $data1 = [
   ['name' => "John Smith", 'age' => 20, 'graduated' => false],
   ['name' => "Samantha Jones", 'age' => 22, 'graduated' => true],
@@ -55,8 +62,11 @@ if ($format === 'json') {
 
 
 <div class="mini-container">
+  
+  <?php 
 
-<?php 
+
+
 require './views/partials/card.php';
 $data1 = [
   ['name' => "John Smith", 'age' => 20, 'graduated' => false],
