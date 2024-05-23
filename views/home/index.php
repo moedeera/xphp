@@ -62,18 +62,7 @@ if ($format === 'json') {
 
 
 <div class="mini-container">
-  
-  <?php 
-
-
-
-require './views/partials/card.php';
-$data1 = [
-  ['name' => "John Smith", 'age' => 20, 'graduated' => false],
-  ['name' => "Samantha Jones", 'age' => 22, 'graduated' => true],
-  ['name' => "Cindy Walker", 'age' => 25, 'graduated' => false],
-  ['name' => "Winston Hughes", 'age' => 27, 'graduated' => true]
-];
+  <?php  require './views/partials/card.php';
 foreach ($data1 as $key=>$value):
 $student = $value;
 echo generateStudentHtml($student);
