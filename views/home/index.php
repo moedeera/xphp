@@ -44,21 +44,18 @@ if ($format === 'json') {
 
 <div class="container" >
   <!-- You can output PHP including variables, etc -->
-
-
-
-<div class="landing-container ">
-  <div class="landing-text">
-    <small>Delicious food collection</small>
-    <h1>Indulge Your Tastebuds </h1>
-    <p>The restaurant is an organic space reflective of our Head Chef's nature inspired cuisine. The interplay of textures and colour brings life and a vibrance that embraces the restaurant’s place. An ode to the Asian landscape, from the vast ocean floor, to the cracked bark of a paperbark tree, every detail from the ground up has been thoughtfully considered.</p>
-   <button class="btn">Explore Menu</button>
-  </div>
-
-<img src="views/home/taco.png" alt="taco" >
-
-  
+<div class="my-4 min-h-96  flex flex-col-reverse md:grid md:grid-cols-2">
+<div class="p-3 my-4 ">
+<div class="font-bold text-5xl mb-2">Headline</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+<button class="border rounded font-bold px-2 py-2 my-2 w-max bg-gray-200 hover:bg-gray-100 ease-in-out">Read More</button>
 </div>
+<div class="h-56 min-w-56  border bg-center bg-cover md:min-h-56 md:h-full"
+    style="background-image:url('views/home/taco.png');"
+       ></div>
+</div>
+
 
 
 <div class="mini-container">
