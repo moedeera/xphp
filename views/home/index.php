@@ -41,7 +41,7 @@ if ($format === 'json') {
 
 ?>
 
-<?php require "./views/partials/carousel.php"?>
+
 <div class="container" >
   <!-- You can output PHP including variables, etc -->
 <div class="my-4 min-h-96  flex flex-col-reverse md:grid md:grid-cols-2">
