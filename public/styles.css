@@ -28,7 +28,7 @@ body {
 .btn a:visited {
   border: 1px solid rgba(128, 128, 128, 0.25);
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 5px 10px;
   background-color: goldenrod;
   transition: all 0.35s ease-in-out;
   color: black;
