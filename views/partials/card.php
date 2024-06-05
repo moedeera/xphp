@@ -7,9 +7,14 @@ function generateStudentHtml($student) {
 
     // Create the HTML string with embedded PHP variables
     $html = '<div class="mini-container-unit">' .
-            '<h3>' . htmlspecialchars($name) . '</h3>' .
-            '<p> Age: ' . htmlspecialchars($age) . '</p>' .
-            '<small>' . ($graduated ? "Graduated" : "Enrolled") . '</small>' .
+           
+          '<h3>' . htmlspecialchars($name) . '</h3>' .
+          '<p> Age: ' . htmlspecialchars($age) . '</p>' .
+          '<small>' . ($graduated ? "Graduated?" : "Enrolled?") . '</small>' .
+          '<div class="container-bg-image"
+          style="background-image:url("https://placehold.co/600x400");"
+          >' .
+            '</div>'. 
             '</div>';
 
     return $html;

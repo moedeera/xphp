@@ -44,17 +44,9 @@ if ($format === 'json') {
 
 <div class="container" >
   <!-- You can output PHP including variables, etc -->
-<div class="my-4 min-h-96  flex flex-col-reverse md:grid md:grid-cols-2">
-<div class="p-3 my-4 ">
-<div class="font-bold text-5xl mb-2">Headline</div>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
- Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-<button class="border rounded font-bold px-2 py-2 my-2 w-max bg-gray-200 hover:bg-gray-100 ease-in-out">Read More</button>
-</div>
-<div class="h-56 min-w-56  border bg-center bg-cover md:min-h-56 md:h-full"
-    style="background-image:url('views/home/taco.png');"
-       ></div>
-</div>
+  <?php  require './views/partials/block1.php';
+  echo generateBlock1();
+  ;?>
 
 
 
