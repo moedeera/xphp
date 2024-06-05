@@ -27,7 +27,17 @@
     id="sidebar"
     style="background-color: rgba(128, 128, 128, 0.75)"
   >
-    <button class="btn" id="closeMenu">Close sidebar</button>
+  <div class="sidebar-menu">
+  <button class="btn mb-3" id="closeMenu">Close</button>
+  <div class="flex flex-col gap-3 capitalize">
+        <div><a href="/">home</a></div>
+        <div><a href="/">Services</a></div>
+        <div><a href="/">About</a></div>
+        <div><a href="/">Login</a></div>
+      </div>
+
+  </div>
+    
   </div>
 </header>
 

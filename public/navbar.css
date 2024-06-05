@@ -34,6 +34,15 @@ header {
   display: block;
 }
 
+.sidebar-menu {
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  animation: fadeInFromLeft 0.35s ease-in-out;
+  transform: translateX(50%);
+  transition: all 0.35s ease-in-out;
+  padding: 20px 10px;
+}
 /* .navbar {
   display: flex;
   width: 100%;
@@ -64,3 +73,13 @@ nav a,
   align-items: center;
   gap: 20px;
 } */
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(50%);
+  }
+}
