@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./public/styles.css" />
+
 
 <header class="relative">
   <div class="hidden md:flex items-center w-full bg-white h-12 px-1">
