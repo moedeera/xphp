@@ -1,5 +1,3 @@
-
-
 <header class="relative">
   <div class="hidden md:flex items-center w-full bg-white h-12 px-1">
     <div class="h-full flex justify-between  items-center  mx-auto w-full ">
@@ -41,7 +39,7 @@
   </div>
 </header>
 
-<script src="./public/script.js"></script>
+
 <script>
   document.getElementById("openMenu").addEventListener("click", function () {
     document.getElementById("sidebar").classList.add("active");
