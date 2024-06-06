@@ -44,14 +44,14 @@ if ($format === 'json') {
 
 <div class="container" >
   <!-- You can output PHP including variables, etc -->
-  <?php  require './views/partials/block1.php';
+  <?php  include './views/partials/block1.php';
   echo generateBlock1();
   ;?>
 
 
 
 <div class="mini-container">
-  <?php  require './views/partials/card.php';
+  <?php  include './views/partials/card.php';
 foreach ($data1 as $key=>$value):
 $student = $value;
 echo generateStudentHtml($student);
