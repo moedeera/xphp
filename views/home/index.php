@@ -1,11 +1,7 @@
 <?php
- basePath('./views/partials/head.php');
+ basePath('./views/partials/head.php');?>
 
-?>
 
-<?php
- basePath('./views/partials/navbar.php')
-?>
 
 <?php 
 
