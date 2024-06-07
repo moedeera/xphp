@@ -20,8 +20,8 @@ function generateListBlock($data = []) {
     $includeImage = isset($data['includeImage']) ? $data['includeImage'] : $defaultImage;
 
     // Start generating the HTML block
-    $html = '<div class="text-3xl text-center w-full m-4 py-4 mb-4">' . htmlspecialchars($listName) . '</div>';
-    $html .= '<ul class=" border rounded md:w-1/4 px-1">';
+   
+    $html = '<ul class=" border rounded md:w-1/4 px-1">';
     $html .= '<li class="p-2 text-2xl font-bold">Features</li>';
 
     // Loop through each item and create list elements
