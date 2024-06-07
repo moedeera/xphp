@@ -1,5 +1,5 @@
 <?php 
-function generateBlock1($data = []) {
+function generateBlock1Reverse($data = []) {
     // Set default values
     $defaultHeader = "Title";
     $defaultContent = "
@@ -19,10 +19,13 @@ function generateBlock1($data = []) {
     $image = isset($data['image']) ? $data['image'] : $defaultImage;
 
     // Create the HTML string with embedded PHP variables
-    $html = '<div class="my-8 min-h-96 flex flex-col-reverse md:grid md:grid-cols-2">' .
-            '<div class="p-3 my-4">' .
-            '<div class="font-bold text-5xl mb-2">' . htmlspecialchars($header) . '</div>' .
-            '<p class="mb-8">' . htmlspecialchars($content) . '</p>';
+    $html = '<div class="my-8 min-h-96 flex flex-col md:grid md:grid-cols-2">'; // Changed order of flex-col-reverse
+    $html .= '<div class="h-56 min-w-56 border bg-center bg-cover md:min-h-56 md:h-full" ' .
+             'style="background-image: url(\'' . htmlspecialchars($image) . '\')">' .
+             '</div>';
+    $html .= '<div class="p-3 my-4">' .
+             '<div class="font-bold text-5xl mb-2">' . htmlspecialchars($header) . '</div>' .
+             '<p class="mb-8">' . htmlspecialchars($content) . '</p>';
 
     // Add the button only if both link and text are provided
     if ($buttonLink && $buttonText) {
@@ -31,11 +34,7 @@ function generateBlock1($data = []) {
                  '</a>';
     }
 
-    $html .= '</div>' .
-             '<div class="h-56 min-w-56 border bg-center bg-cover md:min-h-56 md:h-full" ' .
-             'style="background-image: url(\'' . htmlspecialchars($image) . '\')">' .
-             '</div>' .
-             '</div>';
+    $html .= '</div></div>';
 
     return $html;
 }
