@@ -66,6 +66,16 @@ body {
 .overlay-container {
   position: absolute;
 }
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+  overflow: hidden;
+}
 .container-bg-image {
   position: absolute;
   background-position: center;
@@ -77,17 +87,26 @@ body {
   height: 100vh;
   overflow-y: hidden;
   background-image: url("./freshcut-mobile.webp");
-  z-index: -2;
+  z-index: -10;
   /* animation: kenBurnsEffect 20s ease-in-out infinite reverse; */
 }
+
+video {
+  display: none;
+}
+video.loaded {
+  display: block;
+}
+
 .container-bg-overlay-color {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.85);
   z-index: -1;
+  transition: all 0.5s ease-in-out;
 }
 .login-form {
   border: 1px solid grey;
@@ -207,9 +226,11 @@ body {
   0% {
     background-image: url("https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   }
+
   50% {
     background-image: url("https://images.pexels.com/photos/897262/pexels-photo-897262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   }
+
   100% {
     background-image: url("https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   }
