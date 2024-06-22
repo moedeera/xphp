@@ -33,7 +33,7 @@ body {
 .btn a,
 .btn a:visited {
   border: 1px solid goldenrod;
-
+  text-decoration: none;
   padding: 10px 15px;
   background-color: transparent;
   transition: all 0.35s ease-in-out;

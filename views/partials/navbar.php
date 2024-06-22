@@ -21,9 +21,9 @@ style="position:static; top:0; width:100%"
     > CUTS</span></div>
     <div class="hidden md:flex gap-3 capitalize">
         <div><a href="/">home</a></div>
-        <div><a href="/">Services</a></div>
-        <div><a href="/">About</a></div>
-        <div><a href="/">Login</a></div>
+        <div><a href="/services">Services</a></div>
+        <div><a href="/about">About</a></div>
+        <div><a href="/login">Login</a></div>
       </div>
       <button class="btn text-sm md:hidden" id="openMenu">Menu</button>
       <button class="hidden btn text-sm md:block" id="openMenu">Book</button>
@@ -37,10 +37,10 @@ style="position:static; top:0; width:100%"
   <div class="sidebar-menu">
   <button class="mb-3 border border-round px-4 border-black text-black" id="closeMenu">X</button>
   <div class="flex flex-col gap-3 capitalize text-black font-bold">
-        <div><a href="/">home</a></div>
-        <div><a href="/">Services</a></div>
-        <div><a href="/">About</a></div>
-        <div><a href="/">Login</a></div>
+        <div class="link"><a href="/">home</a></div>
+        <div class="link"><a href="/services">Services</a></div>
+        <div class="link"><a href="/about">About</a></div>
+        <div class="link"><a href="./login">Login</a></div>
       </div>
 
   </div>
@@ -65,7 +65,7 @@ style="position:static; top:0; width:100%"
       const path = window.location.pathname;
 
       // Get all links in the navbar
-      const links = document.querySelectorAll('.md\\:flex a');
+      const links = document.querySelectorAll('.link');
 
       // Loop through each link
       links.forEach(link => {
