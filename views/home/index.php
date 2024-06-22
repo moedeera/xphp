@@ -13,6 +13,8 @@ basePath('./views/partials/navbar.php'); ?>
 
 
 <div class="container" >
+  <div class="container-bg-image"></div>
+  <div class="container-bg-overlay-color"></div>
  <!-- You can output PHP including variables, etc -->
 <?php include './views/partials/html/landing.html';?>
 
