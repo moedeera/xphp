@@ -14,6 +14,7 @@ basePath('./views/partials/navbar.php'); ?>
 
 <div class="container" >
  <!-- You can output PHP including variables, etc -->
+<?php include './views/partials/html/landing.html';?>
 
   <?php  include './views/partials/block1.php';
   echo generateBlock1();

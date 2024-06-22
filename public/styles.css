@@ -9,6 +9,12 @@
 }
 body {
   background-color: #800414;
+  background-color: black;
+
+  /* background-image: url("./freshcut-mobile.webp");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  color: white;
 }
 .container {
   width: 100%;
@@ -26,15 +32,21 @@ body {
 .btn,
 .btn a,
 .btn a:visited {
-  border: 1px solid rgba(128, 128, 128, 0.25);
-  border-radius: 5px;
-  padding: 5px 10px;
-  background-color: goldenrod;
-  transition: all 0.35s ease-in-out;
-  color: black;
-  max-width: max-content;
-}
+  border: 1px solid goldenrod;
 
+  padding: 10px 15px;
+  background-color: transparent;
+  transition: all 0.35s ease-in-out;
+  color: white;
+  min-width: 10rem;
+}
+.active-link {
+  color: goldenrod;
+  text-decoration: underline;
+}
+.span-highlight {
+  color: goldenrod;
+}
 .mini-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -152,7 +164,8 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .btn:hover {
-    transform: translateY(-3px);
+    background-color: goldenrod;
+    transform: translateY(-1px);
     cursor: pointer;
   }
   .mini-container {
