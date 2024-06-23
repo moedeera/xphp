@@ -1,15 +1,9 @@
 <header
-style="position:static; top:0; width:100%"
+style="position:static; top:0; width:100%; padding:5px;"
 >
-  <!-- <div class="hidden md:flex items-center w-full justify-center mb-4 h-12 px-1"
-  style ="background-color:goldenrod"
-  >
-    <div class="h-full flex font-bold justify-center items-center  mx-auto w-full ">
-    <div class="text-2xl">BOOK ONLINE FOR GREAT DISCOUNTS</div>
-    </div>
-  </div> -->
+
   <div
-    class="w-full h-12 px-3 flex items-center pt-3"
+    class="w-full h-12 px-3 flex items-center pt-8"
    
   >
     <div class="h-full flex justify-between  items-center  mx-auto w-full md:w-4/5 ">
@@ -20,27 +14,35 @@ style="position:static; top:0; width:100%"
     style="color:goldenrod"
     > CUTS</span></div>
     <div class="hidden md:flex gap-3 capitalize">
-        <div><a href="/">home</a></div>
-        <div><a href="/services">Services</a></div>
-        <div><a href="/about">About</a></div>
-        <div><a href="/login">Login</a></div>
+        <div><a  class="link" href="/">home</a></div>
+        <div><a  class="link" href="/services">Services</a></div>
+        <div><a  class="link" href="/about">About</a></div>
+        <div><a  class="link" href="/login">Login</a></div>
       </div>
-      <button class="btn text-sm md:hidden" id="openMenu">Menu</button>
+      <button class=" text-sm md:hidden" id="openMenu">
+        <div class="menu-container">
+          <div class="menu-line upper-line"></div>
+          <div class="menu-line middle-line"></div>
+          <div class="menu-line lower-line"></div>
+        </div>
+      </button>
       <button class="hidden btn text-sm md:block" id="openMenu">Book</button>
     </div>
   </div>
   <div
-    class="sidebar"
+    class="sidebar md-hideen"
     id="sidebar"
     style="background-color: rgba(128, 128, 128, 0.75)"
   >
-  <div class="sidebar-menu">
+  <div class="sidebar-menu md-hidden">
   <button class="mb-3 border border-round px-4 border-black text-black" id="closeMenu">X</button>
   <div class="flex flex-col gap-3 capitalize text-black font-bold">
-        <div class="link"><a href="/">home</a></div>
-        <div class="link"><a href="/services">Services</a></div>
-        <div class="link"><a href="/about">About</a></div>
-        <div class="link"><a href="./login">Login</a></div>
+        <div><a href="/">home</a></div>
+        <div ><a href="/services">Services</a></div>
+        <div ><a href="/about">Menu</a></div>
+        <div ><a href="/about">Gallery</a></div>
+        <div ><a href="/about">About</a></div>
+        <div  class="btn-small"><a href="./login">Login</a></div>
       </div>
 
   </div>

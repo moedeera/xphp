@@ -36,12 +36,22 @@ body {
 .btn a:visited {
   border: 1px solid goldenrod;
   text-decoration: none;
-  padding: 15px 15px;
+  padding: 15px 10px;
   background-color: transparent;
   transition: all 0.35s ease-in-out;
   color: white;
-  min-width: 10rem;
+
   letter-spacing: 1px;
+  background-color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-container {
+  height: 56px;
+  width: 56px;
+
+  position: relative;
 }
 .active-link {
   color: goldenrod;
@@ -62,6 +72,25 @@ body {
   padding: 10px;
   border-radius: 5px;
   min-height: 200px;
+  border: 1px solid goldenrod;
+}
+
+.menu-line {
+  position: absolute;
+  height: 5px;
+  width: 80%;
+  left: 10%;
+  background-color: white;
+  transform: translate(0%, 50%);
+}
+.upper-line {
+  top: 20%;
+}
+.middle-line {
+  top: 40%;
+}
+.lower-line {
+  top: 60%;
 }
 
 .overlay-container {
@@ -97,6 +126,8 @@ video {
 }
 video.loaded {
   display: block;
+  object-fit: cover;
+  height: 100vh;
 }
 
 .container-bg-overlay-color {
@@ -202,6 +233,9 @@ video.loaded {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .btn {
+    min-width: 10rem;
+  }
   .btn:hover {
     background-color: goldenrod;
     transform: translateY(-1px);
