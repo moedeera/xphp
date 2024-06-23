@@ -19,7 +19,9 @@ function generateBlock2($data = []) {
     $image = isset($data['image']) ? $data['image'] : $defaultImage;
 
     // Create the HTML string with embedded PHP variables
-    $html = '<div class="my-4 py-4 min-h-96 flex flex-col-reverse md:grid md:grid-cols-2">';
+    $html = '<div class="my-4 py-4 px-2 md:px-0 md:w-4/5 mx-auto min-h-96 flex flex-col-reverse md:grid md:grid-cols-2"
+      style="min-height:24rem;"
+    >';
     $html .= '<div class="p-3 my-4 text-center">' .
              '<div class="font-bold text-5xl mb-2">' . htmlspecialchars($header) . '</div>' .
              '<p class="mb-8">' . htmlspecialchars($content) . '</p>';
