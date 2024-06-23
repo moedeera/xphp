@@ -10,7 +10,7 @@ style="position:static; top:0; width:100%; padding:5px;"
     <div class="md:hidden font-bold">FRESH<span 
     style="color:goldenrod"
     > CUTS</span></div> 
-    <div class="hidden text-2xl md:block font-thin">FRESH<span 
+    <div class="hidden text-2xl md:block font-bold">FRESH<span 
     style="color:goldenrod"
     > CUTS</span></div>
     <div class="hidden md:flex gap-3 capitalize">
