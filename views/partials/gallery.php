@@ -5,7 +5,7 @@ function renderImageGallery($data) {
     $items = $data['items'] ?? [];
 
     // Start the HTML output
-    $html = '<div class="my-16 w-4/5 mx-auto md:w-full md:mx-0">';
+    $html = '<div class="my-24 w-4/5 mx-auto md:w-full md:mx-0">';
     $html .= '<div class="mb-4">';
     $html .= '<div class="text-6xl text-center">' . htmlspecialchars($title) . '</div>';
     $html .= '</div>';

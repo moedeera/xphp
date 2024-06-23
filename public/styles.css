@@ -45,6 +45,7 @@ body {
   background-color: black;
   font-weight: bold;
   text-transform: uppercase;
+  width: max-content;
 }
 
 .menu-container {

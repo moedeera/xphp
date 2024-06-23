@@ -83,12 +83,23 @@ renderImageGallery($mockData);
 ;?>
 
 <?php  include './views/partials/block1reverse.php';
-  echo generateBlock1Reverse();
+$block1data = array(
+  "header"=>"Award Winning Service",
+   "content"=>"Welcome to FreshCuts, where style meets precision.
+    Our barbershop offers top-notch grooming services, blending classic techniques with modern trends.
+    At FreshCuts, every haircut is a masterpiece, crafted to enhance your unique look.
+    Join us for an exceptional grooming experience that leaves you feeling fresh and confident.",
+   "button"=>array(
+    "text"=>"Read More ",
+    "link"=>"/"
+   ),
+   "image"=>"https://images.pexels.com/photos/897273/pexels-photo-897273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+
+);
+  echo generateBlock1Reverse($block1data);
   ;?>
 
-<?php  include './views/partials/listBlock.php';
-  echo generateListBlock();
-  ;?>
+
 
 
 </div>
