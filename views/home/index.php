@@ -57,13 +57,29 @@ $block1data = array(
 <!-- <?php include './views/partials/gallery2.php'; ?> -->
 
 <?php include './views/partials/gallery.php'; 
-renderImageGallery([
-  'https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"', 
-  'https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"', 
-  'https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"', 
-  'https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"', 
-  'https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"', 
-  'https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"']);
+$mockData = [
+  'title' => 'Prices',
+  'items' => [
+      [
+          'item' => 'Standard Cut',
+          'image' => 'https://placehold.co/600x400',
+          'price' => ['$21.99']
+      ],
+      [
+          'item' => 'Deluxe Cut',
+          'image' => 'https://placehold.co/600x400',
+          'price' => ['$29.99']
+      ],
+      [
+          'item' => 'Premium Cut',
+          'image' => 'https://placehold.co/600x400',
+          'price' => ['$39.99']
+      ]
+  ]
+];
+
+// Render the gallery with the mock data
+renderImageGallery($mockData);
 ;?>
 
 <?php  include './views/partials/block1reverse.php';
