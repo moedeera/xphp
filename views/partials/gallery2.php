@@ -1,14 +1,5 @@
-<!--
 
-Photos from unsplash.com
-
-Follow me on
-Dribbble: https://dribbble.com/supahfunk
-Twitter: https://twitter.com/supahfunk
-Codepen: https://codepen.io/supah/
-
--->
-<div class="gallery">
+<div class="gallery my-24">
   <figure>
     <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
     <figcaption>Daytona Beach <small>United States</small></figcaption>
