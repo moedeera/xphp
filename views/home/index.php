@@ -98,11 +98,18 @@ $block1data = array(
 );
   echo generateBlock1Reverse($block1data);
   ;?>
-
-
-
-
 </div>
+<div class="banner-1">
+  <div class="overlay-bg">
+    <div class="banner-content">
+      <div class="text-6xl text-center tracking-wide uppercase">Book an Appointment <br/> Today</div>
+      <div class="btn text-center">Book</div>
+    </div>
+  </div>
+</div>
+
+
+
 
 
 </html>

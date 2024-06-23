@@ -48,6 +48,33 @@ body {
   width: max-content;
 }
 
+.banner-1 {
+  background-image: url("https://images.pexels.com/photos/897273/pexels-photo-897273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-height: 600px;
+  margin: 80px auto;
+  width: 100%;
+}
+.overlay-bg {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+.banner-content {
+  margin: 200px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .menu-container {
   height: 56px;
   width: 56px;
