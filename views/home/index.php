@@ -12,22 +12,22 @@ basePath('./views/partials/navbar.php'); ?>
 ?>
 
 
-<div class="container" >
+<div class="px-3 md:w-4/5 md:px-0 mx-auto" >
   <div class="container-bg-image"> <video autoplay muted loop id="background-video">
       <source src="https://videos.pexels.com/video-files/3998508/3998508-uhd_2732_1440_25fps.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video></div>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-      const video = document.getElementById('background-video');
-      const thumbnail = document.getElementById('background-thumbnail');
+    //     document.addEventListener("DOMContentLoaded", function () {
+    //   const video = document.getElementById('background-video');
+    //   const thumbnail = document.getElementById('background-thumbnail');
 
-      video.oncanplaythrough = function () {
-        video.classList.add('loaded');
-        thumbnail.classList.add('hidden');
-        video.play();
-      };
-    });
+    //   video.oncanplaythrough = function () {
+    //     video.classList.add('loaded');
+    //     thumbnail.classList.add('hidden');
+    //     video.play();
+    //   };
+    // });
     </script>
   <div class="container-bg-overlay-color"></div>
  <!-- You can output PHP including variables, etc -->
@@ -53,6 +53,15 @@ $block1data = array(
   echo generateBlock1($block1data);
   ;?>
 
+
+<?php include './views/partials/gallery2.php'; ?>
+
+<?php include './views/partials/gallery.php'; 
+renderImageGallery([
+  'https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"', 
+  'https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"', 
+  'https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"']);
+;?>
 
 <?php  include './views/partials/block1reverse.php';
   echo generateBlock1Reverse();
