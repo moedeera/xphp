@@ -55,7 +55,8 @@ body {
 }
 .active-link {
   color: goldenrod;
-  text-decoration: underline;
+  padding-bottom: 1px;
+  border-bottom: 2px solid goldenrod;
 }
 .span-highlight {
   color: goldenrod;

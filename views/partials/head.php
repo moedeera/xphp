@@ -8,5 +8,5 @@
   <link rel="stylesheet" href="./public/home.css">
   <link rel="stylesheet" href="./public/styles.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-  <title>My PHP Website</title>
+  <title>Freshcuts</title>
 </head>
