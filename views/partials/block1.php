@@ -19,12 +19,12 @@ function generateBlock1($data = []) {
     $image = isset($data['image']) ? $data['image'] : $defaultImage;
 
     // Create the HTML string with embedded PHP variables
-    $html = '<div class="my-8 px-2 md:px-0 md:w-4/5 mx-auto flex flex-col-reverse md:grid md:grid-cols-2"
+    $html = '<div class="my-8 px-2 md:px-0  mx-auto flex flex-col-reverse md:grid md:grid-cols-2"
     style="min-height:24rem;"
     >' .
             '<div class="px-3 mb-4 mt-4 md:mt-0">' .
             '<div class="font-bold text-5xl mb-2 font-thin tracking-wide uppercase">' . htmlspecialchars($header) . '</div>' .
-            '<p class="mb-8 md:w-4/5 leading-8 tracking-wide">' . htmlspecialchars($content) . '</p>';
+            '<p class="mb-8  leading-8 tracking-wide">' . htmlspecialchars($content) . '</p>';
 
     // Add the button only if both link and text are provided
     if ($buttonLink && $buttonText) {

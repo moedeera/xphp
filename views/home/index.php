@@ -34,7 +34,7 @@ basePath('./views/partials/navbar.php'); ?>
 <?php include './views/partials/html/landing.html';?>
 
 
-<div class="container">
+
   <?php  include './views/partials/block1.php';
 $block1data = array(
   "header"=>"Fresh style lives here",
@@ -52,7 +52,7 @@ $block1data = array(
 
   echo generateBlock1($block1data);
   ;?>
-</div>
+
 
 <?php  include './views/partials/block1reverse.php';
   echo generateBlock1Reverse();
