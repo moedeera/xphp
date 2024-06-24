@@ -102,7 +102,7 @@ $block1data = array(
 <div class="banner-1">
   <div class="overlay-bg">
     <div class="banner-content">
-      <div class="text-6xl text-center tracking-wide uppercase">Book an Appointment <br/> Today</div>
+      <div class="text-4xl  md:text-6xl text-center tracking-wide uppercase">Book an Appointment <br/> Today</div>
       <div class="btn text-center">Book</div>
     </div>
   </div>
