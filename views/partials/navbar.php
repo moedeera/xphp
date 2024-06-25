@@ -13,11 +13,11 @@ style="position:static; top:0; width:100%; padding:5px;"
     <div class="hidden text-2xl md:block font-bold">FRESH<span 
     style="color:goldenrod"
     > CUTS</span></div>
-    <div class="hidden md:flex gap-3 capitalize">
-        <div><a  class="link" href="/">home</a></div>
-        <div><a  class="link" href="/services">Services</a></div>
-        <div><a  class="link" href="/about">About</a></div>
-        <div><a  class="link" href="/login">Login</a></div>
+    <div class="hidden md:flex gap-12 capitalize">
+        <div><a  class="link" href="./">home</a></div>
+        <div><a  class="link" href="./services">Services</a></div>
+        <div><a  class="link" href="./about">About</a></div>
+        <div><a  class="link" href="./login">Login</a></div>
       </div>
       <button class=" text-sm md:hidden" id="openMenu">
         <div class="menu-container">
@@ -37,11 +37,11 @@ style="position:static; top:0; width:100%; padding:5px;"
   <div class="sidebar-menu md-hidden">
   <button class="mb-3 border border-round px-4 border-black text-black" id="closeMenu">X</button>
   <div class="flex flex-col gap-3 capitalize text-black font-bold">
-        <div><a href="/">home</a></div>
-        <div ><a href="/services">Services</a></div>
-        <div ><a href="/about">Menu</a></div>
-        <div ><a href="/about">Gallery</a></div>
-        <div ><a href="/about">About</a></div>
+        <div><a href="./">home</a></div>
+        <div ><a href="./services">Services</a></div>
+        <div ><a href="./about">Menu</a></div>
+        <div ><a href="./about">Gallery</a></div>
+        <div ><a href="./about">About</a></div>
         <div  class="btn-small"><a href="./login">Login</a></div>
       </div>
 
