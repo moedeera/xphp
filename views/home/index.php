@@ -95,6 +95,8 @@ $block1data = array(
 <?php include "./views/partials/html/banner.html" ?>
 <!-- Contact Form -->
  <?php include "./views/partials/html/contactForm.html"?>
+ <!-- Footer -->
+<?php include "./views/partials/html/footer.html"?>
 
 
 
