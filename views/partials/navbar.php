@@ -17,7 +17,7 @@ style="position:static; top:0; width:100%; padding:5px;"
         <div><a  class="link" href="./">home</a></div>
         <div><a  class="link" href="./services">Services</a></div>
         <div><a  class="link" href="./about">About</a></div>
-        <div><a  class="link" href="./login">Login</a></div>
+        <div><a  class="link" href="./gallery">Gallery</a></div>
       </div>
       <button class=" text-sm md:hidden" id="openMenu">
         <div class="menu-container">
@@ -38,11 +38,11 @@ style="position:static; top:0; width:100%; padding:5px;"
   <button class="mb-3 border border-round px-4 border-black text-black" id="closeMenu">X</button>
   <div class="flex flex-col gap-3 capitalize text-black font-bold">
         <div><a href="./">home</a></div>
-        <div ><a href="./services">Services</a></div>
-        <div ><a href="./about">Menu</a></div>
-        <div ><a href="./about">Gallery</a></div>
+        <div ><a href="./services">Services</a></div>      
+        <div ><a href="./gallery">Gallery</a></div>
         <div ><a href="./about">About</a></div>
-        <div  class="btn-small"><a href="./login">Login</a></div>
+        <div ><a href="./about">Contact</a></div>
+        
       </div>
 
   </div>
