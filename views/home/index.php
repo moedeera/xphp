@@ -99,8 +99,10 @@ $block1data = array(
   echo generateBlock1Reverse($block1data);
   ;?>
 </div>
+ <!-- Banner -->
 <?php include "./views/partials/html/banner.html" ?>
-
+<!-- Contact Form -->
+ <?php include "./views/partials/html/contactForm.html"?>
 
 
 

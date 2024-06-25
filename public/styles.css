@@ -106,9 +106,9 @@ body {
 
 .menu-line {
   position: absolute;
-  height: 5px;
-  width: 80%;
-  left: 10%;
+  height: 3px;
+  width: 70%;
+  left: 15%;
   background-color: white;
   transform: translate(0%, 50%);
 }
