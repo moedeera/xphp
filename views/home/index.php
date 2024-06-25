@@ -1,15 +1,7 @@
-<?php 
-basePath('./views/partials/navbar.php'); ?> 
-<?php
- basePath('./views/partials/head.php'); ?>
-
-<?php 
+<?php basePath('./views/partials/navbar.php'); ?> 
+<?php  basePath('./views/partials/head.php'); ?>
 
 
-
-
-
-?>
 
 
 <div class="px-3 md:w-4/5 md:px-0 mx-auto " >
@@ -18,16 +10,16 @@ basePath('./views/partials/navbar.php'); ?>
       Your browser does not support HTML5 video.
     </video></div>
     <script>
-    //     document.addEventListener("DOMContentLoaded", function () {
-    //   const video = document.getElementById('background-video');
-    //   const thumbnail = document.getElementById('background-thumbnail');
+        document.addEventListener("DOMContentLoaded", function () {
+      const video = document.getElementById('background-video');
+      const thumbnail = document.getElementById('background-thumbnail');
 
-    //   video.oncanplaythrough = function () {
-    //     video.classList.add('loaded');
-    //     thumbnail.classList.add('hidden');
-    //     video.play();
-    //   };
-    // });
+      video.oncanplaythrough = function () {
+        video.classList.add('loaded');
+        thumbnail.classList.add('hidden');
+        video.play();
+      };
+    });
     </script>
   <div class="container-bg-overlay-color"></div>
  <!-- You can output PHP including variables, etc -->

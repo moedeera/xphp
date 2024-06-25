@@ -1,18 +1,48 @@
-<div class="border w-4/5 mx-auto my-40">
-  <div class="">
-    <div>Contact us for any concerns</div>
-    <div class="flex flex-col gap-2 my-4">
-      <label for="">Name</label>
-      <input type="text" placeholder="" />
+<form>
+  <div class="w-4/5 mx-auto my-40 flex flex-col md:grid grid-cols-2 gap-2">
+    <div class="">
+      <div class="text-4xl">Any Inquiries? Send us a message</div>
+      <div class="flex flex-col gap-2 my-4">
+        <label for="">Name</label>
+        <input
+          class="p-3 rounded max-w-8s md:mr-6"
+          type="text"
+          placeholder=""
+        />
+      </div>
+      <div class="flex flex-col gap-2 my-4">
+        <label for="">Email</label>
+        <input class="p-3 rounded md:mr-6" type="email" placeholder="" />
+      </div>
+      <div class="flex flex-col gap-2 my-4">
+        <label for="">Message</label>
+        <textarea class="rounded" name="" id="" rows="5"></textarea>
+      </div>
+      <button class="btn">Send</button>
     </div>
-    <div class="flex flex-col gap-2 my-4">
-      <label for="">Email</label>
-      <input type="email" placeholder="" />
-    </div>
-    <div class="flex flex-col gap-2 my-4">
-      <label for="">Message</label>
-      <textarea name="" id="" rows="10"></textarea>
+
+    <!-- Embedding the map -->
+    <div class="border-amber-400">
+      <iframe
+        class="hidden md:block"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.7824714000894!2d-106.65730549999999!3d52.12008660000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f12b519129a3%3A0x6df3b6851358a970!2sEddy&#39;s%20Barbershop%20Saskatoon!5e0!3m2!1sen!2sca!4v1719311690435!5m2!1sen!2sca"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <iframe
+        class="md:hidden"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.7824714000894!2d-106.65730549999999!3d52.12008660000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f12b519129a3%3A0x6df3b6851358a970!2sEddy&#39;s%20Barbershop%20Saskatoon!5e0!3m2!1sen!2sca!4v1719311690435!5m2!1sen!2sca"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
   </div>
-  <div class=""></div>
-</div>
+</form>
