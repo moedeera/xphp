@@ -20,7 +20,7 @@ style="position:static; top:0; width:100%; padding:5px;"
         <div><a  class="link" href="./gallery">Gallery</a></div>
       </div>
       <button class=" text-sm md:hidden" id="openMenu">
-        <div class="menu-container">
+        <div class="menu-container">s
           <div class="menu-line upper-line"></div>
           <div class="menu-line middle-line"></div>
           <div class="menu-line lower-line"></div>
