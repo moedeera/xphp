@@ -49,9 +49,14 @@ echo $route . $data;
 // die() ;
 
 switch ($uri) {  
+
+    
     case $root . "/home":    
         require "views/home/index.php";
         break;
+    case $root . "/test":    
+        pageTemplate1("test");
+            break;    
     case $root . "/login":
         require "views/login/index.php";
         break;
@@ -67,13 +72,16 @@ switch ($uri) {
     case $root . "/about":
         require "views/about/index.php";
         break;
-   case $root . "/posts/:id": 
-       addRoute("/example", "YurController.php") ;
-        break;   
-     default:
-    //  echo "uri is $uri, root is $root case is $root/error" ;
-         require "error.php"   ;
-         break;
+
+
+        default:
+        if (strpos($uri, $root . "/posts/") === 0) {
+            $postIdentifier = substr($uri, strlen($root . "/posts/"));
+            echo "<h1>You are on post $postIdentifier</h1>";
+        } else {
+            require "error.php";
+        }
+        break;
 
 };
 
