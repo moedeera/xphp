@@ -19,7 +19,7 @@ function generateBlock1($data = []) {
     $image = isset($data['image']) ? $data['image'] : $defaultImage;
 
     // Create the HTML string with embedded PHP variables
-    $html = '<div class="my-8 px-2 md:px-0  mx-auto flex flex-col-reverse md:grid md:grid-cols-2"
+    $html = '<div class="mt-8 mb-32 px-2 md:px-0  mx-auto flex flex-col-reverse md:grid md:grid-cols-2"
     style="min-height:24rem;"
     >' .
             '<div class="px-3 mb-4 mt-4 md:mt-0">' .
@@ -34,7 +34,7 @@ function generateBlock1($data = []) {
     }
 
     $html .= '</div>' .
-             '<div class="h-56 min-w-56 bg-bottom bg-cover md:min-h-56 md:h-full" ' .
+             '<div class="min-h-64 min-w-56 bg-center bg-cover md:min-h-56 md:h-full" ' .
              'style="background-image: url(\'' . htmlspecialchars($image) . '\');
             
              ">

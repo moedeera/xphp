@@ -1,47 +1,85 @@
 
-<div class="gallery my-24">
+<div class="gallery my-24 large-screen-gallery">
   <figure>
-    <img src="https://images.pexels.com/photos/897262/pexels-photo-897262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+    <img
+     width="630"
+    src="https://images.pexels.com/photos/897262/pexels-photo-897262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
     <figcaption>Classic Cut <small>Jorge Castillo</small></figcaption>
   </figure>
   <figure>
-    <img src="https://images.pexels.com/photos/668196/pexels-photo-668196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 alt="" />
-    <figcaption>Териберка, gorod Severomorsk <small>Russia</small></figcaption>
+    <img
+      width="630"
+    src="https://images.pexels.com/photos/668196/pexels-photo-668196.jpeg?auto=compress&cs=tinysrgb&w=630&h=375&dpr=1" alt="" />
+    <figcaption>Premium Cut<small>Winston K</small></figcaption>
   </figure>
   <figure>
-    <img src="https://images.unsplash.com/photo-1445964047600-cdbdb873673d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
-    <figcaption>
-      Bad Pyrmont <small>Deutschland</small>
-    </figcaption>
-  </figure>
-  <figure>
-    <img src="https://images.unsplash.com/photo-1439798060585-62ab242d7724?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
-    <figcaption>Yellowstone National Park <small>Jorge Castillo</small></figcaption>
-  </figure>
-  <figure>
-    <img src="https://images.pexels.com/photos/3065171/pexels-photo-3065171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-    <figcaption>Quiraing, Portree <small>United Kingdom</small></figcaption>
-  </figure>
-  <figure>
-    <img src="https://images.unsplash.com/photo-1441906363162-903afd0d3d52?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
-    <figcaption>Highlands <small>Jorge Castillo</small></figcaption>
-  </figure>
-  <figure>
-    <img src="https://images.pexels.com/photos/897262/pexels-photo-897262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-    <figcaption>Classic Cut <small>Jorge Castillo</small></figcaption>
-  </figure>
-  <figure>
-    <img src="https://images.pexels.com/photos/668196/pexels-photo-668196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 alt="" />
-    <figcaption>Териберка, gorod Severomorsk <small>Russia</small></figcaption>
-  </figure>
-  <figure>
-    <img src="https://images.unsplash.com/photo-1445964047600-cdbdb873673d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
-    <figcaption>
-      Bad Pyrmont <small>Deutschland</small>
-    </figcaption>
+    <img 
+     width="630"
+    src="https://images.pexels.com/photos/3356174/pexels-photo-3356174.jpeg?auto=compress&cs=tinysrgb&w=630&h=375&dpr=1" alt="" />
+    <figcaption>Ultra Cut<small>Kirk K</small></figcaption>
   </figure>
 
+  <figure>
+    <img 
+         width="630"
+    src="https://images.pexels.com/photos/3065171/pexels-photo-3065171.jpeg?auto=compress&cs=tinysrgb&w=630&h=375&dpr=1" alt="" />
+    <figcaption>Perms <small>Elizabeth King</small></figcaption>
+  </figure>
+  <figure>
+    <img 
+    width="630"
+    src="https://images.pexels.com/photos/1319461/pexels-photo-1319461.jpeg" alt="" />
+    <figcaption>Shave<small>Winston K</small></figcaption>
+  </figure>
+  <figure>
+    <img 
+         width="630"
+    src="https://images.pexels.com/photos/897251/pexels-photo-897251.jpeg?auto=compress&cs=tinysrgb&w=630&h=375&dpr=1" alt="" />
+    <figcaption>Premium Cut<small>Winston K</small></figcaption>
+  </figure>
 </div>
+ <!-- large screen gallery -->
+  
+<div class="gallery my-24 small-screen-gallery">
+  <figure>
+    <img
+     width="315"
+    src="https://images.pexels.com/photos/897262/pexels-photo-897262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+    <figcaption>Classic Cut <small>Jorge Castillo</small></figcaption>
+  </figure>
+  <figure>
+    <img
+      width="630"
+    src="https://images.pexels.com/photos/668196/pexels-photo-668196.jpeg?auto=compress&cs=tinysrgb&w=630&h=375&dpr=1" alt="" />
+    <figcaption>Premium Cut<small>Winston K</small></figcaption>
+  </figure>
+  <figure>
+    <img 
+     width="630"
+    src="https://images.pexels.com/photos/3356174/pexels-photo-3356174.jpeg?auto=compress&cs=tinysrgb&w=630&h=375&dpr=1" alt="" />
+    <figcaption>Ultra Cut<small>Kirk K</small></figcaption>
+  </figure>
+
+  <figure>
+    <img 
+         width="630"
+    src="https://images.pexels.com/photos/3065171/pexels-photo-3065171.jpeg?auto=compress&cs=tinysrgb&w=630&h=375&dpr=1" alt="" />
+    <figcaption>Perms <small>Elizabeth King</small></figcaption>
+  </figure>
+  <figure>
+    <img 
+    width="630"
+    src="https://images.pexels.com/photos/1319461/pexels-photo-1319461.jpeg" alt="" />
+    <figcaption>Shave<small>Winston K</small></figcaption>
+  </figure>
+  <figure>
+    <img 
+         width="630"
+    src="https://images.pexels.com/photos/897251/pexels-photo-897251.jpeg?auto=compress&cs=tinysrgb&w=630&h=375&dpr=1" alt="" />
+    <figcaption>Premium Cut<small>Winston K</small></figcaption>
+  </figure>
+</div>
+
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
   <symbol id="close" viewBox="0 0 18 18">

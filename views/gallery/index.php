@@ -11,6 +11,8 @@ echo createPageHeader("Our Works", "https://images.pexels.com/photos/1805600/pex
 
  <?php include './views/partials/gallery2.php'; ?> 
 
+
+
 </div>
 <?php include "./views/partials/html/footer.html"?>
 </html>

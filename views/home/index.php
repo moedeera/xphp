@@ -46,7 +46,7 @@ $block1data = array(
   ;?>
 
 
-<!-- <?php include './views/partials/gallery2.php'; ?> -->
+
 
 <?php include './views/partials/gallery.php'; 
 $mockData = [

@@ -19,7 +19,7 @@ function generateBlock1Reverse($data = []) {
     $image = isset($data['image']) ? $data['image'] : $defaultImage;
 
     // Create the HTML string with embedded PHP variables
-    $html = '<div class="my-8 min-h-96  px-2 md:px-0  mx-auto flex flex-col md:grid md:grid-cols-2"
+    $html = '<div class="my-32 min-h-96  px-2 md:px-0  mx-auto flex flex-col md:grid md:grid-cols-2"
     style="min-height:24rem;"
     >'; // Changed order of flex-col-reverse
     $html .= '<div class="h-56 min-w-56 bg-center bg-cover md:min-h-56 md:h-full" ' .
