@@ -5,6 +5,7 @@ function ReTurnHello(){
 }
 
 function basePath($path){
+
     include  $path;
 }
 
@@ -18,10 +19,11 @@ function pageTemplate1($pageString){
 }
 
 function postTemplate($postId){
-    basePath('./views/partials/head.php');
-    basePath('./views/partials/navbar.php'); 
+    require "./views/posts/index.php";
+    basePath('./views/partials/headSub.php');
+    basePath('./views/partials/navbarSub.php'); 
   
-    echo '<h1> This is post'. $postId.'</h1>';
+  renderPostPage($postId);
    //  basePath("./views/". $pageString ."/index.php");
     basePath("./views/partials/html/footer.html")   ;
 }

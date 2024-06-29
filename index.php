@@ -66,11 +66,10 @@ $routes = [
 if (array_key_exists($uri, $routes)) {
     pageTemplate1($routes[$uri]);
 } else if (strpos($uri, $root . "/posts/") === 0) {
- basePath('./views/partials/head.php');
-    basePath('./views/partials/navbar.php'); 
+
     $postIdentifier = substr($uri, strlen($root . "/posts/"));
    
-    echo "<h1>You are on post $postIdentifier</h1>";
+  postTemplate($postIdentifier);
 } else {
     require "error.php";
 }
