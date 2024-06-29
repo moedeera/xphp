@@ -1,7 +1,4 @@
-<?php 
-basePath('./views/partials/navbar.php'); ?> 
-<?php
- basePath('./views/partials/head.php'); ?>
+
 
   <?php include "./views/partials/pageHeader.php";
 
@@ -14,5 +11,5 @@ echo createPageHeader("Our Works", "https://images.pexels.com/photos/1805600/pex
 
 
 </div>
-<?php include "./views/partials/html/footer.html"?>
+
 </html>

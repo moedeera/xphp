@@ -1,7 +1,4 @@
-<?php 
-basePath('./views/partials/navbar.php'); ?> 
-<?php
- basePath('./views/partials/head.php'); ?>
+
 
   <?php include "./views/partials/pageHeader.php";
 
@@ -28,5 +25,5 @@ $block1data = array(
   ;?>
 
 </div>
-<?php include "./views/partials/html/footer.html"?>
+
 </html>

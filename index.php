@@ -1,6 +1,9 @@
 <?php 
 
 // connect database
+
+use GuzzleHttp\Psr7\Uri;
+
 include "./database.php";
 // helper functions
 require './helpers.php';
@@ -48,40 +51,27 @@ echo $route . $data;
 // echo $root ;
 // die() ;
 
-switch ($uri) {  
-
-    
-    case $root . "/home":    
-        require "views/home/index.php";
-        break;
-    case $root . "/test":    
-        pageTemplate1("test");
-            break;    
-    case $root . "/login":
-        require "views/login/index.php";
-        break;
-    case $root . "/services":
-        require "views/services/index.php";
-        break;
-    case $root . "/gallery":
-        require "views/gallery/index.php";
-        break;
-    case $root . "/":
-        require "views/home/index.php";
-        break;
-    case $root . "/about":
-        require "views/about/index.php";
-        break;
+// Define the mapping of URIs to templates
+$routes = [
+    "$root/home" => "home",
+    "$root/test" => "test",
+    "$root/login" => "login",
+    "$root/services" => "services",
+    "$root/gallery" => "gallery",
+    "$root/" => "home",
+    "$root/about" => "about"
+];
 
 
-        default:
-        if (strpos($uri, $root . "/posts/") === 0) {
-            $postIdentifier = substr($uri, strlen($root . "/posts/"));
-            echo "<h1>You are on post $postIdentifier</h1>";
-        } else {
-            require "error.php";
-        }
-        break;
-
-};
-
+if (array_key_exists($uri, $routes)) {
+    pageTemplate1($routes[$uri]);
+} else if (strpos($uri, $root . "/posts/") === 0) {
+ basePath('./views/partials/head.php');
+    basePath('./views/partials/navbar.php'); 
+    $postIdentifier = substr($uri, strlen($root . "/posts/"));
+   
+    echo "<h1>You are on post $postIdentifier</h1>";
+} else {
+    require "error.php";
+}
+?>

@@ -1,21 +1,11 @@
-<?php
-
-include basePath('./views/partials/navbar.php')
-?>
-<?php
-
-require basePath('./views/partials/head.php')
-?>
-
-
-
 <?php 
+basePath('./views/partials/navbar.php'); ?> 
+<?php
+ basePath('./views/partials/head.php'); ?>
 
-// function (postid){\
-//}
-// return data
-//  return error
-?>
+
+
+
 <div class="container">
 
   <!-- You may only drop the semi-colon after a statement when the statement is followed immediately by a closing PHP tag ?>. -->
