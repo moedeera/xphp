@@ -53,17 +53,17 @@ $mockData = [
   'items' => [
       [
           'item' => 'Standard Cut',
-          'image' => 'https://placehold.co/600x400',
+          'image' => 'https://images.pexels.com/photos/1570807/pexels-photo-1570807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
           'price' => ['$21.99']
       ],
       [
           'item' => 'Deluxe Cut',
-          'image' => 'https://placehold.co/600x400',
+          'image' => 'https://images.pexels.com/photos/3356170/pexels-photo-3356170.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
           'price' => ['$29.99']
       ],
       [
           'item' => 'Premium Cut',
-          'image' => 'https://placehold.co/600x400',
+          'image' => 'https://images.pexels.com/photos/668196/pexels-photo-668196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
           'price' => ['$39.99']
       ]
   ]

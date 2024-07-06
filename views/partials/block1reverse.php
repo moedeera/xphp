@@ -19,7 +19,38 @@ function generateBlock1Reverse($data = []) {
     $image = isset($data['image']) ? $data['image'] : $defaultImage;
 
     // Create the HTML string with embedded PHP variables
-    $html = '<div class="my-32 min-h-96  px-2 md:px-0  mx-auto flex flex-col md:grid md:grid-cols-2"
+    $html = '<style>
+    .fade-in {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    .fade-in.visible {
+        opacity: 1;
+    }
+    </style>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const observerOptions = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.15
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll(".fade-in").forEach(element => {
+            observer.observe(element);
+        });
+    });
+    </script>';
+
+    $html .= '<div class="my-32 min-h-96 px-2 md:px-0 mx-auto flex flex-col md:grid md:grid-cols-2 fade-in"
     style="min-height:24rem;"
     >'; // Changed order of flex-col-reverse
     $html .= '<div class="h-56 min-w-56 bg-center bg-cover md:min-h-56 md:h-full" ' .

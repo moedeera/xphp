@@ -19,26 +19,54 @@ function generateBlock1($data = []) {
     $image = isset($data['image']) ? $data['image'] : $defaultImage;
 
     // Create the HTML string with embedded PHP variables
-    $html = '<div class="mt-8 mb-32 px-2 md:px-0  mx-auto flex flex-col-reverse md:grid md:grid-cols-2"
+    $html = '<style>
+    .fade-in {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    .fade-in.visible {
+        opacity: 1;
+    }
+    </style>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const observerOptions = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.15
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll(".fade-in").forEach(element => {
+            observer.observe(element);
+        });
+    });
+    </script>';
+
+    $html .= '<div class="mt-8 mb-32 px-2 md:px-0 mx-auto flex flex-col-reverse md:grid md:grid-cols-2 fade-in"
     style="min-height:24rem;"
     >' .
             '<div class="px-3 mb-4 mt-4 md:mt-0">' .
             '<div class="font-bold text-5xl mb-2 font-thin tracking-wide uppercase">' . htmlspecialchars($header) . '</div>' .
-            '<p class="mb-8  leading-8 tracking-wide">' . htmlspecialchars($content) . '</p>';
+            '<p class="mb-8 leading-8 tracking-wide">' . htmlspecialchars($content) . '</p>';
 
     // Add the button only if both link and text are provided
     if ($buttonLink && $buttonText) {
         $html .= '<a href="' . htmlspecialchars($buttonLink) . '" class="btn">' .
-                 htmlspecialchars($buttonText) . ' &#8594;'.
+                 htmlspecialchars($buttonText) . ' &#8594;' .
                  '</a>';
     }
 
     $html .= '</div>' .
              '<div class="min-h-64 min-w-56 bg-center bg-cover md:min-h-56 md:h-full" ' .
-             'style="background-image: url(\'' . htmlspecialchars($image) . '\');
-            
-             ">
-             ' .
+             'style="background-image: url(\'' . htmlspecialchars($image) . '\');">' .
              '</div>' .
              '</div>';
 
