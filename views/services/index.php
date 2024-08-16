@@ -25,5 +25,5 @@ $block1data = array(
   ;?>
 
 </div>
-
+<?php include "./views/partials/html/banner.html" ?>
 </html>
