@@ -54,7 +54,7 @@ function generateBlock1($data = []) {
     style="min-height:24rem;"
     >' .
             '<div class="px-3 mb-4 mt-4 md:mt-0">' .
-            '<div class="font-bold text-5xl mb-2 font-thin tracking-wide uppercase">' . htmlspecialchars($header) . '</div>' .
+            '<div class="font-bold text-4xl mb-2 font-thin text-center md:text-left tracking-wide uppercase">' . htmlspecialchars($header) . '</div>' .
             '<p class="mb-8 leading-8 tracking-wide">' . htmlspecialchars($content) . '</p>';
 
     // Add the button only if both link and text are provided

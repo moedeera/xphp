@@ -57,7 +57,7 @@ function generateBlock1Reverse($data = []) {
              'style="background-image: url(\'' . htmlspecialchars($image) . '\')">' .
              '</div>';
     $html .= '<div class="px-3 flex flex-col">' .
-             '<div class="font-bold text-5xl mb-2 font-thin tracking-wide uppercase">' . htmlspecialchars($header) . '</div>' .
+             '<div class="font-bold text-4xl mb-2 text-center md:text-left font-thin tracking-wide uppercase">' . htmlspecialchars($header) . '</div>' .
              '<p class="mb-8 leading-8 tracking-wide">' . htmlspecialchars($content) . '</p>';
 
     // Add the button only if both link and text are provided
