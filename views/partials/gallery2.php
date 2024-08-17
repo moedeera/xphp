@@ -1,5 +1,5 @@
-
-<div class="gallery my-24 large-screen-gallery">
+??
+<div class="hidden gallery my-24 large-screen-gallery">
   <figure>
     <img
      width="630"
@@ -40,7 +40,7 @@
 </div>
  <!-- large screen gallery -->
   
-<div class="gallery my-24 small-screen-gallery">
+<div class="gallery my-24 small-screen-gallery hidden md:block border">
   <figure>
     <img
      width="315"
